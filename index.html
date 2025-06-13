@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Love Missed in College | NOIRVA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c2d, #2a1d2f);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0e6f6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 0 30px rgba(255, 0, 128, 0.08);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff7bbf;
+      animation: pulse 2s infinite alternate;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #e1d3ea;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      from { text-shadow: 0 0 5px #ff94d6; }
+      to { text-shadow: 0 0 20px #ff2b9e; }
+    }
+
+    .glow {
+      color: #ffc0df;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff88c2, 0 0 20px #ff4d94;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>A Love Missed in College</h1>
+    <div class="glow">A story from NOIRVA</div>
+    <p>
+      I saw her every day near the canteen...<br />
+      Her laughter floated in the air, and yet,<br />
+      she never knew I even existed.<br /><br />
+
+      I had words trapped in my chest, waiting<br />
+      for courage that never came.<br />
+      Days turned into semesters,<br />
+      and she remained a beautiful mystery in my story.<br /><br />
+
+      Time didn't wait. Neither did she.<br />
+      Life moved forward, but my silence stayed behind.<br />
+      Now years have passed...<br />
+      And sometimes I walk near a café and smile.<br /><br />
+
+      Not because I forgot her,<br />
+      but because I remember loving someone silently.<br />
+      Because some stories aren’t meant to be told aloud—<br />
+      they’re meant to be lived once, and cherished forever.
+    </p>
+
+    <div class="footer">
+      — A memory, a pain, a lesson... from someone who felt deeply.
+    </div>
+  </div>
+
+  <script>
+    // Simple glow effect loop (optional touch)
+    const glow = document.querySelector('.glow');
+    let glowOn = true;
+
+    setInterval(() => {
+      glow.style.opacity = glowOn ? '0.6' : '1';
+      glowOn = !glowOn;
+    }, 2000);
+  </script>
+</body>
+</html>
